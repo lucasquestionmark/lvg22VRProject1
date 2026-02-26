@@ -53,7 +53,7 @@ namespace Seagull.Interior_I1.Inspector {
                     }
                 }
                 
-                if (field.GetCustomAttribute<IgnoreInInspectorAttribute>() == null)
+                if (field.GetCustomAttribute<HideInInspector>() == null)
                     EditorGUILayout.PropertyField(prop, true);
             }
             

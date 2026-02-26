@@ -14,7 +14,7 @@ namespace Seagull.Interior_I1.SceneProps {
         
         [Range(0f, 1f)] public float shift;
 
-        [AButton("Init Positions")] [IgnoreInInspector]
+        [AButton("Init Positions")] [HideInInspector]
         public Action init;
         private void Reset() {
             init = () => {

@@ -17,7 +17,7 @@ namespace Seagull.Interior_01.Utility {
         [Tooltip("Which layer should Yurei Post Processor Volume use")]
         public int yureiLayer = -1;
         
-        [YureiButton("Initialize")] [IgnoreInInspector]
+        [YureiButton("Initialize")] [HideInInspector]
         public Action initialize;
 
         private void Reset() {
